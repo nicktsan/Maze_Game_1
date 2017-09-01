@@ -29,8 +29,9 @@ public class PlayerMobility : MonoBehaviour {
         rb.velocity = movement * speed;
 
         //make player sprite face mouse cursor
-        Vector3 player_pos = Camera.main.WorldToScreenPoint(transform.position);
         /*
+        Vector3 player_pos = Camera.main.WorldToScreenPoint(transform.position);
+        
         Vector3 difference = Input.mousePosition - player_pos;
         float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         //Subtract 90 from the rotation, or else the sprite will face +90 degrees in regards to the mouse cursor.
